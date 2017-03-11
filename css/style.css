@@ -1,0 +1,149 @@
+body{height: 1100px;
+  background: url("http://i985.photobucket.com/albums/ae339/filosss2010/Filosssografia%202012/ESCF8322.jpg");
+  no-repeat center center fixed;
+  background-size: cover;
+}
+
+#text1 {padding-top: 50px;
+    margin-left: 5%;
+    color: #fff;
+    /*font-family: 'Dancing Script', cursive;*/
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 150px;
+}
+#text2 {padding-top: 10px;
+    margin-left: 10%;
+    color: #fff;
+    /*font-family: 'Dancing Script', cursive;*/
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 150px;
+}
+
+#buttons {width: 50%;
+          margin-left: 50px;
+          margin-right: 50px;
+          margin-bottom: 10px;
+}
+
+.about {
+  width: 700px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top:: 10px;
+  padding: 10px;
+  background-color: #000;
+  opacity: 0.6;
+  border-radius: 15px;
+  display: none;
+  color: #fff;
+}
+
+p {margin:20px;}
+/*position: absolute;
+   left: 100px;
+   top: 150px;*/
+iframe {margin: 50px 50px 0px 50px;
+        background-color: #000;
+        /*display:none;*/
+}
+
+.music {width: 40%;
+    height: 40%;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #fff;
+    opacity: 0.3;
+    border-radius: 15px;
+    /*display: none;*/
+    color: #000 ;
+}
+
+
+
+#show-text {width: 350px;
+      margin-top: 10px;
+
+}
+
+#fadein-music-player {width: 350px;
+      margin-top: 10px;*/
+}
+
+#hide-music-player {display:none;
+                    background-color: transparent;
+}
+
+#close-text {background-color: transparent;}
+
+
+/*mobile devices small screen*/
+
+@media screen and (max-width: 568px) {
+  #Main {height: 1200px;
+    background: url("http://i985.photobucket.com/albums/ae339/filosss2010/Filosssografia%202012/ESCF8322.jpg");
+    no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  #text1 {padding-top: 10px;
+      margin-left: 5%;
+      color: #fff;
+      /*font-family: 'Dancing Script', cursive;*/
+      font-family: 'Cabin Sketch', cursive;
+      font-size: 100px;
+  }
+  #text2 {padding-top: 5px;
+      margin-left: 10%;
+      color: #fff;
+      /*font-family: 'Dancing Script', cursive;*/
+      font-family: 'Cabin Sketch', cursive;
+      font-size: 100px;
+  }
+
+  .about {
+    width: 100%;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 10px;
+    background-color: #000;
+    opacity: 0.6;
+    border-radius: 15px;
+    display: none;
+    color: #fff;
+  }
+
+  p {margin:10px;}
+  /*position: absolute;
+     left: 100px;
+     top: 150px;*/
+  iframe {margin: 50px 50px 0px 50px;
+          background-color: #000;
+          /*display:none;*/
+  }
+
+  .music {width: 40%;
+      height: 40%;
+      margin-right: 20px;
+      padding: 10px;
+      background-color: #fff;
+      opacity: 0.3;
+      border-radius: 15px;
+      /*display: none;*/
+      color: #000 ;
+  }
+
+
+
+  #show-text {width: 100%;
+
+  }
+
+  #fadein-music-player {width: 100%;
+
+  }
+
+  #hide-music-player {display:none;
+                      background-color: transparent;
+  }
+
+  #close-text {background-color: transparent;}

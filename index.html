@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Frédéric Chopin- tribute page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Calligraffitti|Cinzel|Dancing+Script|Great+Vibes|Homemade+Apple|Pacifico|Sacramento" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+
+
+        <script>
+          $(document).ready(function(){
+            $("#close-text").click(function(){
+              $("#about").fadeOut("slow");
+            });
+            $("#hide-music-player").click(function(){
+              $("#invisible-section").fadeOut("slow");
+              $("#hide-music-player").fadeOut("slow");
+            });
+            $("#show-text").click(function(){
+              $("#about").fadeIn("slow:");
+            });
+            $(".playmusic").click(function(){
+              $("#invisible-section").fadeIn("slow");
+              $("#hide-music-player").fadeIn("slow");
+              $("#invisible-section").scroll(600);
+            });
+
+          });
+        </script>
+
+  </head>
+
+
+  <body>
+
+
+    <div id="Main" class="fluid-container">
+
+      <h1 id="text1">Frédéric</h1>
+      <h1 id="text2">Chopin</h1>
+      <div id="buttons">
+        <a id= "show-text" class="btn btn-lg btn-danger show inline-block" href="#about" role="button">About</a>
+        <a id= "fadein-music-player" class="btn btn-lg btn-success playmusic inline-block" href="#invisible-section" role="button">Music</a>
+      </div>
+
+      <!--<img alt="Chopin statue Warsaw" src="http://trybala.com.pl/wp-content/uploads/2014/12/pomnik-chopina-w-%C5%82azienkach.jpg">
+      </img>-->
+
+
+      <div id="about" class="about">
+        <div class="window">
+          <button id="close-text" type="button"  class="btn btn-info pull-right hide" style="margin: 0px;" name="button">Close</button>
+
+        </div>
+          <p style="margin-top:50px"> Polish composer and virtuoso pianist of the Romantic era who wrote primarily for the solo piano
+            Most are for solo piano, though he also wrote two piano concertos, a few chamber pieces, and some songs to Polish lyrics. His keyboard style is highly individual and often technically demanding; his own performances were noted for their nuance and sensitivity. Chopin invented the concept of the instrumental ballade. His major piano works also include mazurkas, waltzes, nocturnes, polonaises, études, impromptus, scherzos, preludes and sonatas, some published only after his death. Influences on his composition style include Polish folk music, the classical tradition of J. S. Bach, Mozart and Schubert, the music of all of whom he admired, as well as the Paris salons where he was a frequent guest. His innovations in style, musical form, and harmony, and his association of music with nationalism, were influential throughout and after the late Romantic period.
+            Chopin's music, his status as one of music's earliest superstars, his association (if only indirect) with political insurrection, his love life and his early death have made him a leading symbol of the Romantic era in the public consciousness. His works remain popular, and he has been the subject of numerous films and biographies of varying degrees of historical accuracy.
+          </p>
+      </div>
+      </div>
+
+      <div id="invisible-section" style="display:none">
+      <div class="music-player-box" style="background:black">
+        <!--<button id="hide-music" type="button" class="btn btn-info hide" style="margin: 0px;" name="button">Close</button>
+        -->
+        <a id= "hide-music-player" class="btn btn-lg btn-info hide-music pull-right" href="#" name="button">Close</a>
+        <div id="music-player">
+
+          <iframe width="400px" height="200px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/199738863&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+          <iframe class="inline-block" width="400px" height="200px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/4973256&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </body>
+  </html>
