@@ -18,13 +18,14 @@
         <script>
           $(document).ready(function(){
             $("#close-text").click(function(){
-              $("#about").fadeOut("slow");
+              $("#about").toggle("slow");
             });
             $("#hide-music-player").click(function(){
               $("#invisible-section").fadeOut("slow");
               $("#hide-music-player").fadeOut("slow");
             });
             $("#show-text").click(function(){
+              $("#about").fadeIn("slow:");
               $("#about").fadeIn("slow:");
             });
             $(".playmusic").click(function(){
@@ -74,8 +75,8 @@
         <a id= "hide-music-player" class="btn btn-lg btn-info hide-music pull-right" href="#" name="button">Close</a>
         <div id="music-player">
 
-          <iframe width="400px" height="200px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/199738863&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-          <iframe class="inline-block" width="400px" height="200px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/4973256&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+          <iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/199738863&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+          <iframe class="inline-block" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/4973256&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
         </div>
       </div>
     </div>
