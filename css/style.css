@@ -122,7 +122,10 @@ iframe {margin: 50px 50px 0px 50px;
 
   }
 
-  p {margin:10px;}
+  p {margin:10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    }
   /*position: absolute;
      left: 100px;
      top: 150px;*/
